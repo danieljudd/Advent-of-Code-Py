@@ -1,0 +1,13 @@
+#save input.txt to same directory
+data = open('input.txt', 'r').read().split('\n')
+
+n = 0
+
+while n<len(data)-2:
+
+    sum = 2020 - int(data[n])
+    if str(sum) in data:
+        print ("yes " + str(sum) + " and " + str(2020-sum) + " are equal to 2020")
+        print (str(sum*(2020-sum)) + " are both of these multiplied")
+        break;
+    n=n+1
